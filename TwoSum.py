@@ -19,5 +19,19 @@ class Solution(object):
                 left += 1
         return indices
 """
+class Solution(object):
+    def twoSum(self, nums, target):
+        res = {}
 
+        for n in range(len(nums)):
+            num = nums[n]
+            diff = target - num
+
+            if diff in res:
+                return [res[diff], n]
+            
+            res[num] = n
+
+        return []
+        
 
