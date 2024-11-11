@@ -12,9 +12,9 @@ class Solution(object):
         res = 0
 
         for i in range(len(s)):
+            # checks if the current number is less than the next number
             if i+1 < len(s) and roman[s[i]] < roman[s[i+1]]:
-                res -= roman[s[i]]
+                res -= roman[s[i]]  # subtract current value
             else:
-                res += roman[s[i]]
+                res += roman[s[i]]  # add current value
         return res
-        
