@@ -1,3 +1,3 @@
-# Leetcode
+# LeetCode
 
-A compilation of Leetcode problems I've solved.
+A compilation of LeetCode problems I've solved.
